@@ -34,7 +34,7 @@ No modules.
 | <a name="input_datacenter_name_target_A"></a> [datacenter\_name\_target\_A](#input\_datacenter\_name\_target\_A) | Datacenter Name for target A | `string` | n/a | yes |
 | <a name="input_datacenter_name_target_B"></a> [datacenter\_name\_target\_B](#input\_datacenter\_name\_target\_B) | Datacenter Name for target B | `string` | n/a | yes |
 | <a name="input_domain_name_target_A"></a> [domain\_name\_target\_A](#input\_domain\_name\_target\_A) | Domain name for target A | `string` | n/a | yes |
-| <a name="input_domain_name_target_B"></a> [domain\_name\_target\_B](#input\_domain\_name\_target\_B) | value | `string` | n/a | yes |
+| <a name="input_domain_name_target_B"></a> [domain\_name\_target\_B](#input\_domain\_name\_target\_B) | Domain name for target A | `string` | n/a | yes |
 | <a name="input_gtm_domain"></a> [gtm\_domain](#input\_gtm\_domain) | gtm domain | `string` | n/a | yes |
 | <a name="input_name"></a> [name](#input\_name) | Property name and prefix for resources | `string` | n/a | yes |
 | <a name="input_path_test"></a> [path\_test](#input\_path\_test) | Path to probe liveness test | `string` | n/a | yes |
