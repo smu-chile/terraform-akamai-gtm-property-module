@@ -1,5 +1,4 @@
 resource "akamai_gtm_property" "gtm_property" {
-  # domain                 = akamai_gtm_domain.smu_domain.name
   domain                 = var.gtm_domain
   name                   = var.name
   type                   = "weighted-round-robin"
