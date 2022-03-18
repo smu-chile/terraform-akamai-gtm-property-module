@@ -13,7 +13,7 @@ resource "akamai_gtm_property" "gtm_property" {
   traffic_target {
     datacenter_id = var.datacenter_id_target_A
     enabled       = true
-    weight        = 1
+    weight        = var.weight_target_A
     servers = [var.domain_name_target_A]
     name = var.datacenter_name_target_A
     handout_cname = var.domain_name_target_A
@@ -21,7 +21,7 @@ resource "akamai_gtm_property" "gtm_property" {
   traffic_target {
     datacenter_id = var.datacenter_id_target_B
     enabled       = true
-    weight        = 1
+    weight        = var.weight_target_B
     servers = [var.domain_name_target_B]
     name = var.datacenter_name_target_B
     handout_cname = var.domain_name_target_B

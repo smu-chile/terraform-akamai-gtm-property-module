@@ -8,6 +8,13 @@ variable "gtm_domain" {
   description = "gtm domain"
 }
 
+variable "weight_target_A" {
+  type = number
+  description = "weight for target A"
+  default = "1"
+}
+
+
 variable "domain_name_target_A" {
   type = string
   description = "Domain name for target A"
@@ -22,6 +29,13 @@ variable "datacenter_id_target_A" {
   type = string
   description = "ID of datacenter target A"
 }
+
+variable "weight_target_B" {
+  type = number
+  description = "weight for target B"
+  default = "1"
+}
+
 
 variable "domain_name_target_B" {
   type = string
