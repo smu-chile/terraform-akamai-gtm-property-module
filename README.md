@@ -39,6 +39,8 @@ No modules.
 | <a name="input_name"></a> [name](#input\_name) | Property name and prefix for resources | `string` | n/a | yes |
 | <a name="input_path_test"></a> [path\_test](#input\_path\_test) | Path to probe liveness test | `string` | n/a | yes |
 | <a name="input_public_domain_name"></a> [public\_domain\_name](#input\_public\_domain\_name) | Main Domain Name | `string` | n/a | yes |
+| <a name="input_weight_target_A"></a> [weight\_target\_A](#input\_weight\_target\_A) | weight for target A | `number` | `"1"` | no |
+| <a name="input_weight_target_B"></a> [weight\_target\_B](#input\_weight\_target\_B) | weight for target B | `number` | `"1"` | no |
 
 ## Outputs
 
