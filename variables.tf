@@ -62,7 +62,7 @@ variable "public_domain_name" {
   description = "Main Domain Name"
 }
 
-variable "cerificate_verification" {
+variable "certificate_verification" {
   type        = bool
   description = "cerificate verification for https"
   default     = false

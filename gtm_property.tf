@@ -38,7 +38,7 @@ resource "akamai_gtm_property" "gtm_property" {
     http_error4xx                    = true
     http_error5xx                    = true
     disabled                         = false
-    peer_certificate_verification    = var.cerificate_verification
+    peer_certificate_verification    = var.certificate_verification
     recursion_requested              = false
     request_string                   = ""
     resource_type                    = ""
