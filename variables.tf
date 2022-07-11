@@ -4,61 +4,66 @@ variable "name" {
 }
 
 variable "gtm_domain" {
-  type = string
+  type        = string
   description = "gtm domain"
 }
 
 variable "weight_target_A" {
-  type = number
+  type        = number
   description = "weight for target A"
-  default = "1"
+  default     = "1"
 }
 
 
 variable "domain_name_target_A" {
-  type = string
+  type        = string
   description = "Domain name for target A"
 }
 
 variable "datacenter_name_target_A" {
-  type = string
+  type        = string
   description = "Datacenter Name for target A"
 }
 
 variable "datacenter_id_target_A" {
-  type = string
+  type        = string
   description = "ID of datacenter target A"
 }
 
 variable "weight_target_B" {
-  type = number
+  type        = number
   description = "weight for target B"
-  default = "1"
+  default     = "1"
 }
 
 
 variable "domain_name_target_B" {
-  type = string
+  type        = string
   description = "value"
 }
 
 variable "datacenter_name_target_B" {
-  type = string
+  type        = string
   description = "Datacenter Name for target B"
 }
 
 variable "datacenter_id_target_B" {
-  type = string
+  type        = string
   description = "ID of datacenter target B"
 }
 
 variable "path_test" {
-  type = string
+  type        = string
   description = "Path to probe liveness test"
 }
 
 variable "public_domain_name" {
-  type = string
+  type        = string
   description = "Main Domain Name"
 }
-  
+
+variable "certificate_verification" {
+  type        = bool
+  description = "cerificate verification for https"
+  default     = false
+}
