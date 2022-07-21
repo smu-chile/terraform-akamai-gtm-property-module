@@ -46,11 +46,13 @@ variable "domain_name_target_B" {
 variable "datacenter_name_target_B" {
   type        = string
   description = "Datacenter Name for target B"
+  default     = ""
 }
 
 variable "datacenter_id_target_B" {
   type        = string
   description = "ID of datacenter target B"
+  default     = ""
 }
 
 variable "path_test" {
