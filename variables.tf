@@ -40,6 +40,7 @@ variable "weight_target_B" {
 variable "domain_name_target_B" {
   type        = string
   description = "value"
+  default     = ""
 }
 
 variable "datacenter_name_target_B" {

@@ -18,13 +18,18 @@ resource "akamai_gtm_property" "gtm_property" {
     name          = var.datacenter_name_target_A
     handout_cname = var.domain_name_target_A
   }
-  traffic_target {
-    datacenter_id = var.datacenter_id_target_B
-    enabled       = true
-    weight        = var.weight_target_B
-    servers       = [var.domain_name_target_B]
-    name          = var.datacenter_name_target_B
-    handout_cname = var.domain_name_target_B
+
+  
+  dynamic "traffic_target" {
+    for_each = var.domain_name_target_B != "" ? [1] : []
+    content {
+      datacenter_id = var.datacenter_id_target_B
+      enabled       = true
+      weight        = var.weight_target_B
+      servers       = [var.domain_name_target_B]
+      name          = var.datacenter_name_target_B
+      handout_cname = var.domain_name_target_B
+    }
   }
 
   liveness_test {
