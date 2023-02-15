@@ -55,6 +55,32 @@ variable "datacenter_id_target_B" {
   default     = ""
 }
 
+variable "weight_target_C" {
+  type        = number
+  description = "weight for target C"
+  default     = "1"
+}
+
+
+variable "domain_name_target_C" {
+  type        = string
+  description = "value"
+  default     = ""
+}
+
+variable "datacenter_name_target_C" {
+  type        = string
+  description = "Datacenter Name for target C"
+  default     = ""
+}
+
+variable "datacenter_id_target_C" {
+  type        = string
+  description = "ID of datacenter target C"
+  default     = ""
+}
+
+
 variable "path_test" {
   type        = string
   description = "Path to probe liveness test"

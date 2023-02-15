@@ -32,6 +32,19 @@ resource "akamai_gtm_property" "gtm_property" {
     }
   }
 
+  dynamic "traffic_target" {
+    for_each = var.domain_name_target_C != "" ? [2] : []
+    content {
+      datacenter_id = var.datacenter_id_target_C
+      enabled       = true
+      weight        = var.weight_target_C
+      servers       = [var.domain_name_target_C]
+      name          = var.datacenter_name_target_C
+      handout_cname = var.domain_name_target_C
+    }
+  }
+
+
   liveness_test {
     name                             = "Liveness Test-${var.name}"
     test_interval                    = 60
